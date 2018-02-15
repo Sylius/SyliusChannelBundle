@@ -4,6 +4,5 @@
 sylius:
     form:
         channel:
-            description: Mô tả
-            enabled: Đã kích hoạt
-            name: Tên
+            description: Apraksts
+            name: Nosaukums
