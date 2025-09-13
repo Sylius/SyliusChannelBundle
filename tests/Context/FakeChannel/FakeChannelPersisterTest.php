@@ -94,7 +94,7 @@ final class FakeChannelPersisterTest extends TestCase
         $this->responseHeaderBag
             ->expects(self::once())
             ->method('setCookie')
-            ->with($this->callback(fn(Cookie $cookie) => $cookie->getName() === '_channel_code' &&
+            ->with($this->callback(fn (Cookie $cookie) => $cookie->getName() === '_channel_code' &&
                 $cookie->getValue() === 'fake_channel_code'));
 
         $this->fakeChannelPersister->onKernelResponse(new ResponseEvent(
